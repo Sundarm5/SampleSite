@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- Rando -->
+<head>
     <meta name="google-site-verification" content="PM6zF5dPFKPGqPQBQXw1o3OA3kQJ1iaBy4r3dbBD6FQ" />
     <title>Sample Website</title>
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Center Content */
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            padding: 50px 20px;
+            max-width: 600px;
+        }
+
+        /* Heading Styles */
+        h1 {
+            color: #e74c3c;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 1rem;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        span {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Button Styles */
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Sample Website!</h1>
-    <p>This is a practice site for learning Google Search Console.</p>
+    <div class="container">
+        <h1>Welcome to My Sample Website!</h1>
+        <p>This is a practice site for learning Google Search Console.</p>
+        
+        <!-- Optional Test Error Content -->
+        <p>Oops! This site can’t be reached.</p>
+        <p>Check if there is a typo in <span>twitterwrapped.exa.ai</span>.</p>
+        <p><strong>Error:</strong> DNS_PROBE_FINISHED_NXDOMAIN</p>
+        <button onclick="location.reload()">Try Again</button>
+    </div>
 </body>
 </html>
